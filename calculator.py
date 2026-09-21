@@ -8,6 +8,9 @@ class StudentRecord:
             print(f"Warning: Overwriting previous marks for {subject_name}.")
         self.marks[subject_name] = score
         print(f"Added {subject_name}: {score}")
+
+ 
+
     def calculate_percentage(self):
         if not self.marks:
             return 0.0
@@ -35,7 +38,8 @@ class StudentRecord:
         
         return grade, status
 
-            def print_report_card(self):
+
+    def print_report_card(self):
         print("\n========================================")
         print(f"       REPORT CARD: {self.student_name.upper()}       ")
         print("========================================")
@@ -94,4 +98,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
