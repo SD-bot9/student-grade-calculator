@@ -8,6 +8,7 @@ class StudentRecord:
             print(f"Warning: Overwriting previous marks for {subject_name}.")
         self.marks[subject_name] = score
         print(f"Added {subject_name}: {score}")
+ 
     def calculate_percentage(self):
         if not self.marks:
             return 0.0
@@ -34,3 +35,4 @@ class StudentRecord:
         status = "Fail" if (percentage < 40 or failed_subject) else "Pass"
         
         return grade, status
+
